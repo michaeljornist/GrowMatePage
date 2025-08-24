@@ -21,22 +21,22 @@ const AppFeatures: React.FC = () => {
 
   const gardenBuilderImages = [
     {
-      src: '/images/build_garden_1.PNG',
+      src: `${process.env.PUBLIC_URL}/images/build_garden_1.PNG`,
       title: 'Garden Planning Interface',
       description: 'Start by selecting your garden space and environmental conditions'
     },
     {
-      src: '/images/build_garden_2.PNG',
+      src: `${process.env.PUBLIC_URL}/images/build_garden_2.PNG`,
       title: 'Plant Selection & Compatibility',
       description: 'AI suggests compatible plants based on your space and preferences'
     },
     {
-      src: '/images/build_garden_3.PNG',
+      src: `${process.env.PUBLIC_URL}/images/build_garden_3.PNG`,
       title: 'Smart Layout Design',
       description: 'Optimal plant placement for growth, sunlight, and water requirements'
     },
     {
-      src: '/images/build_garden_4.PNG',
+      src: `${process.env.PUBLIC_URL}/images/build_garden_4.PNG`,
       title: 'Final Garden Blueprint',
       description: 'Your personalized garden plan with care instructions and timeline'
     }
@@ -44,17 +44,17 @@ const AppFeatures: React.FC = () => {
 
   const hazardReportingImages = [
     {
-      src: '/images/hazards_page.PNG',
+      src: `${process.env.PUBLIC_URL}/images/hazards_page.PNG`,
       title: 'Hazards Dashboard',
       description: 'Monitor and track potential threats to your plants'
     },
     {
-      src: '/images/manage_hazards_notifications.PNG',
+      src: `${process.env.PUBLIC_URL}/images/manage_hazards_notifications.PNG`,
       title: 'Notification Management',
       description: 'Configure and manage hazard alert preferences'
     },
     {
-      src: '/images/report_hazards.PNG',
+      src: `${process.env.PUBLIC_URL}/images/report_hazards.PNG`,
       title: 'Report Hazards',
       description: 'Easy reporting system for new environmental threats'
     }
@@ -62,7 +62,7 @@ const AppFeatures: React.FC = () => {
 
   const wateringNotificationImages = [
     {
-      src: '/images/watering_notifi.PNG',
+      src: `${process.env.PUBLIC_URL}/images/watering_notifi.PNG`,
       title: 'Watering Notifications',
       description: 'Smart watering reminders based on sensor data'
     }
@@ -70,17 +70,17 @@ const AppFeatures: React.FC = () => {
 
   const aiPlantAssistantImages = [
     {
-      src: '/images/AI_plant1.PNG',
+      src: `${process.env.PUBLIC_URL}/images/AI_plant1.PNG`,
       title: 'AI Plant Analysis',
       description: 'Upload plant photos for instant AI-powered health analysis'
     },
     {
-      src: '/images/AI_plant2.PNG',
+      src: `${process.env.PUBLIC_URL}/images/AI_plant2.PNG`,
       title: 'Disease Detection',
       description: 'Advanced AI algorithms identify plant diseases and issues'
     },
     {
-      src: '/images/AI_plant3.PNG',
+      src: `${process.env.PUBLIC_URL}/images/AI_plant3.PNG`,
       title: 'Treatment Recommendations',
       description: 'Get personalized care instructions and treatment plans'
     }
