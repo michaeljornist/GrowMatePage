@@ -56,9 +56,6 @@ const SensorSection: React.FC = () => {
   const futureUpgrades = [
     "Light intensity sensors (PAR/Lux)",
     "pH level monitoring",
-    "NPK nutrient sensors",
-    "CO2 concentration measurement",
-    "UV radiation detection",
     "Vibration/movement sensors"
   ];
 

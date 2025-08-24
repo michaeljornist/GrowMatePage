@@ -329,48 +329,6 @@ const AppFeatures: React.FC = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div style={{ 
-          textAlign: 'center', 
-          marginTop: '60px',
-          padding: '40px',
-          backgroundColor: 'white',
-          borderRadius: '16px',
-          border: '1px solid #e5e7eb'
-        }}>
-          <h3 style={{ 
-            fontSize: '1.5rem', 
-            fontWeight: '600', 
-            color: '#111827', 
-            marginBottom: '16px' 
-          }}>
-            Ready to Transform Your Gardening Experience?
-          </h3>
-          <p style={{ 
-            fontSize: '1rem', 
-            color: '#6b7280',
-            marginBottom: '24px'
-          }}>
-            Join thousands of gardeners who are already using GrowMateAI to create thriving, intelligent gardens.
-          </p>
-          <button style={{
-            backgroundColor: '#22c55e',
-            color: 'white',
-            padding: '12px 32px',
-            fontSize: '1rem',
-            fontWeight: '600',
-            border: 'none',
-            borderRadius: '8px',
-            cursor: 'pointer',
-            transition: 'background-color 0.3s ease'
-          }}
-          onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#16a34a'}
-          onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#22c55e'}
-          >
-            Download GrowMateAI
-          </button>
-        </div>
-
         {/* AI Garden Builder Modal */}
         <AnimatePresence>
           {isModalOpen && (

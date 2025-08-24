@@ -26,13 +26,6 @@ const TechStack: React.FC = () => {
       color: "#16a34a"
     },
     {
-      name: "3D Modeling",
-      description: "Interactive 3D plant visualization and growth simulation",
-      icon: Box,
-      category: "Visualization",
-      color: "#14b8a6"
-    },
-    {
       name: "ESP32 Sensors",
       description: "Custom IoT devices for real-time environmental monitoring",
       icon: Cpu,
@@ -52,13 +45,6 @@ const TechStack: React.FC = () => {
       icon: Lock,
       category: "Security",
       color: "#ef4444"
-    },
-    {
-      name: "Google Login",
-      description: "Seamless OAuth integration for easy user onboarding",
-      icon: Globe,
-      category: "Authentication",
-      color: "#eab308"
     },
     {
       name: "Push Notifications",
@@ -105,7 +91,7 @@ const TechStack: React.FC = () => {
         {/* Technology Grid */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(5, 1fr)', // Force 5 columns per row
+          gridTemplateColumns: 'repeat(4, 1fr)', // Change to 4 columns for better layout
           gap: '30px',
           marginTop: '40px'
         }}>
@@ -197,14 +183,14 @@ const TechStack: React.FC = () => {
             color: '#111827', 
             marginBottom: '16px' 
           }}>
-            Complete Technology Ecosystem
+            Integrated Technology Solution
           </h3>
           <p style={{ 
             fontSize: '1rem', 
             color: '#6b7280' 
           }}>
-            Our tech stack combines {technologies.length} cutting-edge technologies to create a seamless, 
-            scalable, and intelligent gardening experience from IoT sensors to AI-powered insights.
+            Our streamlined tech stack combines {technologies.length} essential technologies to deliver 
+            a robust, scalable smart gardening platform with real-time monitoring and AI-powered insights.
           </p>
         </div>
 

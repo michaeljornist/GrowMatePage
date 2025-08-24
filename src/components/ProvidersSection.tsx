@@ -108,7 +108,7 @@ const ProvidersSection: React.FC = () => {
             margin: '0 auto',
             lineHeight: '1.6'
           }}>
-            The FrontendProviders app is a React web-based administrative dashboard designed for GrowMate AI service providers and administrators to manage and monitor the entire GrowMateAI ecosystem.
+            For every good app, there is good customer support - and that's why we developed a fully functional system for GrowMate AI service providers and administrators to deliver exceptional support, monitor the entire ecosystem, and ensure every gardener gets the help they deserve. 🌱✨
           </p>
         </div>
 
