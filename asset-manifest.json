@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GrowMatePage/static/css/main.3efb17da.css",
+    "main.js": "/GrowMatePage/static/js/main.964ac3ee.js",
+    "static/js/453.ed19ae01.chunk.js": "/GrowMatePage/static/js/453.ed19ae01.chunk.js",
+    "index.html": "/GrowMatePage/index.html",
+    "main.3efb17da.css.map": "/GrowMatePage/static/css/main.3efb17da.css.map",
+    "main.964ac3ee.js.map": "/GrowMatePage/static/js/main.964ac3ee.js.map",
+    "453.ed19ae01.chunk.js.map": "/GrowMatePage/static/js/453.ed19ae01.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3efb17da.css",
+    "static/js/main.964ac3ee.js"
+  ]
+}
