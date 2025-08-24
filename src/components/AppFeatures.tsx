@@ -21,22 +21,22 @@ const AppFeatures: React.FC = () => {
 
   const gardenBuilderImages = [
     {
-      src: `${process.env.PUBLIC_URL}/images/build_garden_1.PNG`,
+      src: '/images/build_garden_1.PNG',
       title: 'Garden Planning Interface',
       description: 'Start by selecting your garden space and environmental conditions'
     },
     {
-      src: `${process.env.PUBLIC_URL}/images/build_garden_2.PNG`,
+      src: '/images/build_garden_2.PNG',
       title: 'Plant Selection & Compatibility',
       description: 'AI suggests compatible plants based on your space and preferences'
     },
     {
-      src: `${process.env.PUBLIC_URL}/images/build_garden_3.PNG`,
+      src: '/images/build_garden_3.PNG',
       title: 'Smart Layout Design',
       description: 'Optimal plant placement for growth, sunlight, and water requirements'
     },
     {
-      src: `${process.env.PUBLIC_URL}/images/build_garden_4.PNG`,
+      src: '/images/build_garden_4.PNG',
       title: 'Final Garden Blueprint',
       description: 'Your personalized garden plan with care instructions and timeline'
     }
@@ -44,17 +44,17 @@ const AppFeatures: React.FC = () => {
 
   const hazardReportingImages = [
     {
-      src: `${process.env.PUBLIC_URL}/images/hazards_page.PNG`,
+      src: '/images/hazards_page.PNG',
       title: 'Hazards Dashboard',
       description: 'Monitor and track potential threats to your plants'
     },
     {
-      src: `${process.env.PUBLIC_URL}/images/manage_hazards_notifications.PNG`,
+      src: '/images/manage_hazards_notifications.PNG',
       title: 'Notification Management',
       description: 'Configure and manage hazard alert preferences'
     },
     {
-      src: `${process.env.PUBLIC_URL}/images/report_hazards.PNG`,
+      src: '/images/report_hazards.PNG',
       title: 'Report Hazards',
       description: 'Easy reporting system for new environmental threats'
     }
@@ -62,7 +62,7 @@ const AppFeatures: React.FC = () => {
 
   const wateringNotificationImages = [
     {
-      src: `${process.env.PUBLIC_URL}/images/watering_notifi.PNG`,
+      src: '/images/watering_notifi.PNG',
       title: 'Watering Notifications',
       description: 'Smart watering reminders based on sensor data'
     }
@@ -86,8 +86,53 @@ const AppFeatures: React.FC = () => {
     }
   ];
 
+  const sensorPairingImages = [
+    {
+      src: `${process.env.PUBLIC_URL}/images/sensor_pairing1.PNG`,
+      title: 'Sensor Discovery',
+      description: 'Discover and connect to nearby GrowMate sensors'
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/sensor_pairing2.PNG`,
+      title: 'Pairing Process',
+      description: 'Step-by-step sensor pairing and configuration'
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/my_sensor_page.PNG`,
+      title: 'Sensor Management',
+      description: 'View and manage all your connected sensors'
+    }
+  ];
+
+  const addNewPlantsImages = [
+    {
+      src: `${process.env.PUBLIC_URL}/images/my_plants_page.PNG`,
+      title: 'My Plants Dashboard',
+      description: 'View and manage your plant collection'
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/add_new_plant.PNG`,
+      title: 'Add New Plant',
+      description: 'Easy plant registration with detailed profiles'
+    }
+  ];
+
+  const livePlantDataImages = [
+    {
+      src: `${process.env.PUBLIC_URL}/images/plantStat.PNG`,
+      title: 'Live Plant Statistics',
+      description: 'Real-time monitoring of plant health and environmental data'
+    }
+  ];
+
   const handleFeatureClick = (featureTitle: string) => {
-    if (featureTitle === 'AI Garden Builder' || featureTitle === 'Hazard Reporting' || featureTitle === 'Watering Notifications' || featureTitle === 'AI Plant Assistant') {
+    if (featureTitle === 'AI Garden Builder' || 
+        featureTitle === 'Hazard Reporting' || 
+        featureTitle === 'Watering Notifications' || 
+        featureTitle === 'AI Plant Assistant' ||
+        featureTitle === 'Pairing New Sensors' ||
+        featureTitle === 'Adding New Plants' ||
+        featureTitle === 'Live Plant Data') {
       setCurrentFeature(featureTitle);
       setIsModalOpen(true);
       setCurrentImageIndex(0);
@@ -103,6 +148,9 @@ const AppFeatures: React.FC = () => {
     if (currentFeature === 'Hazard Reporting') return hazardReportingImages;
     if (currentFeature === 'Watering Notifications') return wateringNotificationImages;
     if (currentFeature === 'AI Plant Assistant') return aiPlantAssistantImages;
+    if (currentFeature === 'Pairing New Sensors') return sensorPairingImages;
+    if (currentFeature === 'Adding New Plants') return addNewPlantsImages;
+    if (currentFeature === 'Live Plant Data') return livePlantDataImages;
     return gardenBuilderImages;
   };
 
@@ -404,7 +452,13 @@ const AppFeatures: React.FC = () => {
                     ? 'Monitor and manage potential threats to keep your plants safe'
                     : currentFeature === 'Watering Notifications'
                     ? 'Receive personalized watering reminders based on real-time sensor data'
-                    : 'Get expert AI-powered plant diagnosis and personalized care recommendations'
+                    : currentFeature === 'AI Plant Assistant'
+                    ? 'Get expert AI-powered plant diagnosis and personalized care recommendations'
+                    : currentFeature === 'Pairing New Sensors'
+                    ? 'Easy setup and management of your GrowMate sensors'
+                    : currentFeature === 'Adding New Plants'
+                    ? 'Build your digital garden with detailed plant profiles and care tracking'
+                    : 'Monitor real-time environmental data and plant health statistics'
                   }
                 </p>
 

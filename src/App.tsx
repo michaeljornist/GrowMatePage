@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import TechStack from './components/TechStack';
 import AppFeatures from './components/AppFeatures';
+import ProvidersSection from './components/ProvidersSection';
+import SensorSection from './components/SensorSection';
 
 function App() {
   return (
@@ -17,9 +19,10 @@ function App() {
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#features">Features</a>
+            <a href="#app-features">App Features</a>
+            <a href="#sensor">Sensor</a>
             <a href="#tech">Tech Stack</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#team">Team</a>
+            <a href="#providers">Providers</a>
             <a href="#contact">Contact</a>
           </div>
         </nav>
@@ -36,10 +39,6 @@ function App() {
               GrowMateAI combines AI intelligence with custom ESP32 sensors to monitor plant health, 
               detect issues early, and deliver personalized care recommendations for healthier plants.
             </p>
-            <div className="hero-buttons">
-              <button className="btn btn-primary">Get Started</button>
-              <button className="btn btn-secondary">Watch Demo</button>
-            </div>
             <div className="hero-stats">
               <div className="stat">
                 <div className="stat-number">24/7</div>
@@ -57,25 +56,17 @@ function App() {
           </div>
           <div className="hero-image">
             <div className="app-mockup">
-              <div className="phone-frame">
-                <div className="screen">
-                  <div className="app-header">
-                    <h3>GrowMateAI</h3>
-                  </div>
-                  <div className="app-content">
-                    <div className="sensor-card">
-                      <span>Soil Moisture: 85%</span>
-                    </div>
-                    <div className="sensor-card">
-                      <span>Temperature: 24°C</span>
-                    </div>
-                    <div className="ai-recommendation">
-                      <h4>AI Recommendation</h4>
-                      <p>Your plants are thriving! 🌱</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/wellcomepage.PNG`}
+                alt="GrowMateAI Welcome Screen" 
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '20px',
+                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+                  maxWidth: '300px'
+                }}
+              />
             </div>
           </div>
         </div>
@@ -157,8 +148,14 @@ function App() {
       {/* App Features Section */}
       <AppFeatures />
 
+      {/* Sensor Section */}
+      <SensorSection />
+
       {/* Tech Stack Section */}
       <TechStack />
+
+      {/* Providers Section */}
+      <ProvidersSection />
 
       {/* Contact Section */}
       <section id="contact" className="section section-gray">

@@ -79,7 +79,7 @@ const TechStack: React.FC = () => {
   console.log('Technologies array:', technologies);
 
   return (
-    <section key={Date.now()} style={{ padding: '80px 0', backgroundColor: 'white' }}>
+    <section id="tech" key={Date.now()} style={{ padding: '80px 0', backgroundColor: 'white' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
         
         {/* Header */}
