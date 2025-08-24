@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/GrowMatePage/static/css/main.22f097a8.css",
-    "main.js": "/GrowMatePage/static/js/main.8243cfb6.js",
+    "main.js": "/GrowMatePage/static/js/main.9ef5f2a7.js",
     "static/js/453.ed19ae01.chunk.js": "/GrowMatePage/static/js/453.ed19ae01.chunk.js",
     "index.html": "/GrowMatePage/index.html",
     "main.22f097a8.css.map": "/GrowMatePage/static/css/main.22f097a8.css.map",
-    "main.8243cfb6.js.map": "/GrowMatePage/static/js/main.8243cfb6.js.map",
+    "main.9ef5f2a7.js.map": "/GrowMatePage/static/js/main.9ef5f2a7.js.map",
     "453.ed19ae01.chunk.js.map": "/GrowMatePage/static/js/453.ed19ae01.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22f097a8.css",
-    "static/js/main.8243cfb6.js"
+    "static/js/main.9ef5f2a7.js"
   ]
 }
