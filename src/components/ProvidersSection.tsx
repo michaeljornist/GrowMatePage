@@ -18,17 +18,17 @@ const ProvidersSection: React.FC = () => {
 
   const providersImages = [
     {
-      src: `${process.env.PUBLIC_URL}/images/Providers_dash.PNG`,
+      src: `${process.env.PUBLIC_URL}/images/Providers_dash.png`,
       title: 'Administrative Dashboard',
       description: 'Real-time system statistics and monitoring overview'
     },
     {
-      src: `${process.env.PUBLIC_URL}/images/Providers_hazardMangment.PNG`,
+      src: `${process.env.PUBLIC_URL}/images/Providers_hazardMangment.png`,
       title: 'Hazard Management System',
       description: 'Interactive map interface for managing environmental hazards'
     },
     {
-      src: `${process.env.PUBLIC_URL}/images/Providers_userMang.PNG`,
+      src: `${process.env.PUBLIC_URL}/images/Providers_userMang.png`,
       title: 'User Management',
       description: 'Comprehensive user account administration and monitoring'
     }
