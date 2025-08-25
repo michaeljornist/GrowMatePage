@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Database, Cloud, Smartphone, Cpu, Brain, Lock, Globe, Zap, Box, Mail } from 'lucide-react';
+import { Database, Cloud, Smartphone, Cpu, Brain, Lock, Zap, Mail } from 'lucide-react';
 
 const TechStack: React.FC = () => {
   const technologies = [
