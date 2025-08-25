@@ -125,6 +125,14 @@ const AppFeatures: React.FC = () => {
     }
   ];
 
+  const communityImages = [
+    {
+      src: `${process.env.PUBLIC_URL}/images/community.PNG`,
+      title: 'Community Hub',
+      description: 'Connect with fellow gardening enthusiasts and share experiences'
+    }
+  ];
+
   const handleFeatureClick = (featureTitle: string) => {
     if (featureTitle === 'AI Garden Builder' || 
         featureTitle === 'Hazard Reporting' || 
@@ -132,7 +140,8 @@ const AppFeatures: React.FC = () => {
         featureTitle === 'AI Plant Assistant' ||
         featureTitle === 'Pairing New Sensors' ||
         featureTitle === 'Adding New Plants' ||
-        featureTitle === 'Live Plant Data') {
+        featureTitle === 'Live Plant Data' ||
+        featureTitle === 'Community Hub') {
       setCurrentFeature(featureTitle);
       setIsModalOpen(true);
       setCurrentImageIndex(0);
@@ -151,6 +160,7 @@ const AppFeatures: React.FC = () => {
     if (currentFeature === 'Pairing New Sensors') return sensorPairingImages;
     if (currentFeature === 'Adding New Plants') return addNewPlantsImages;
     if (currentFeature === 'Live Plant Data') return livePlantDataImages;
+    if (currentFeature === 'Community Hub') return communityImages;
     return gardenBuilderImages;
   };
 
@@ -416,6 +426,8 @@ const AppFeatures: React.FC = () => {
                     ? 'Easy setup and management of your GrowMate sensors'
                     : currentFeature === 'Adding New Plants'
                     ? 'Build your digital garden with detailed plant profiles and care tracking'
+                    : currentFeature === 'Community Hub'
+                    ? 'Connect with fellow gardening enthusiasts and share your growing journey'
                     : 'Monitor real-time environmental data and plant health statistics'
                   }
                 </p>

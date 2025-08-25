@@ -23,7 +23,6 @@ function App() {
             <a href="#sensor">Sensor</a>
             <a href="#tech">Tech Stack</a>
             <a href="#providers">Providers</a>
-            <a href="#contact">Contact</a>
           </div>
         </nav>
       </header>
@@ -157,37 +156,6 @@ function App() {
       {/* Providers Section */}
       <ProvidersSection />
 
-      {/* Contact Section */}
-      <section id="contact" className="section section-gray">
-        <div className="container">
-          <h2 className="section-title">Get In <span className="highlight">Touch</span></h2>
-          <div className="contact-content">
-            <div className="contact-info">
-              <h3>Contact Information</h3>
-              <div className="contact-item">
-                <span className="contact-icon">📧</span>
-                <span>hello@growmateai.com</span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📱</span>
-                <span>+972-50-123-4567</span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📍</span>
-                <span>Tel Aviv University, Israel</span>
-              </div>
-            </div>
-            <form className="contact-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <input type="text" placeholder="Subject" required />
-              <textarea placeholder="Your Message" rows={5} required></textarea>
-              <button type="submit" className="btn btn-primary">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="footer">
         <div className="container">
@@ -207,9 +175,9 @@ function App() {
                 <a href="#about">About</a>
               </div>
               <div className="footer-section">
-                <h4>Contact</h4>
-                <a href="#contact">Get in Touch</a>
-                <a href="mailto:hello@growmateai.com">Email</a>
+                <h4>Resources</h4>
+                <a href="#sensor">Sensor</a>
+                <a href="#providers">Providers</a>
                 <a href="https://github.com/growmateai">GitHub</a>
               </div>
             </div>
